@@ -13,7 +13,7 @@ echo "###"
 echo "Copying MeditationWebApp for tilda"
 echo "###"
 mkdir ./map
-cp ../MeditationWebApp/dist/* ./
+cp ../MeditationWebApp/dist-for-tilda/* ./
 
 git add .
 git commit -a -m "Deploy"

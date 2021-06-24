@@ -9,12 +9,14 @@ echo "###"
 cd ../MeditationWebApp
 yarn build-for-tilda
 
+cd ../JoinMeOnHikeSite
+
 echo "###"
 echo "Copying MeditationWebApp for tilda"
 echo "###"
-mkdir ./map
-cp ../MeditationWebApp/dist-for-tilda/* ./
+mkdir ./dist-for-tilda
+cp -r ../MeditationWebApp/dist-for-tilda/* ./
 
 git add .
-git commit -a -m "Deploy"
+git commit -a -m "Deploy"   
 git push

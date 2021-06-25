@@ -14,7 +14,6 @@ cd ../JoinMeOnHikeSite
 echo "###"
 echo "Copying MeditationWebApp for tilda"
 echo "###"
-mkdir ./dist-for-tilda
 cp -r ../MeditationWebApp/dist-for-tilda/* ./
 
 git add .

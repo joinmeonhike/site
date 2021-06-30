@@ -25,7 +25,11 @@
               eventAction: eventAction,
               eventLabel: eventLabel
             };
-            gtag('send', a);
+            gtag('event', hitType, {
+              'event_category': eventCategory,
+              'event_label': eventLabel,
+              'value': eventLabel
+            });
             ym(82198585, 'hit', '/', a);
           };
             window.firebaseConfig = {
